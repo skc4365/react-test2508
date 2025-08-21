@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import styled from "styled-components";
 
 const HeaderWrap = styled.header`
   display: flex;
@@ -11,6 +11,7 @@ const HeaderWrap = styled.header`
   background: #004080;
   color: white;
   position: relative;
+   z-index: 9999;
 `;
 
 const Logo = styled.div`
